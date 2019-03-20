@@ -59,7 +59,7 @@ class Graph:
 
         # monitor
         self.audio = tf.py_func(spectrogram2wav, [self.z_hat[0]], tf.float32)
-        k=0
+        
         if mode in ("train", "eval"):
             # Loss
             self.loss1 = tf.reduce_mean(tf.abs(self.y_hat - self.y))
@@ -91,7 +91,7 @@ class Graph:
 
             tf.summary.audio("{}/sample".format(mode), tf.expand_dims(self.audio, 0), hp.sr)
             self.merged = tf.summary.merge_all()
-         
+k=0         
 if __name__ == '__main__':
     g = Graph(); print("Training Graph loaded")
     
