@@ -13,7 +13,7 @@ class Hyperparams:
     vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
 
     # data
-    data = "/kaggle/input/datacmu301/data/private/voice/LJSpeech-1.0"
+    data = "/kaggle/input/cleancmu301/data/private/voice/LJSpeech-1.0"
     # data = "/data/private/voice/nick"
     test_data = 'harvard_sentences.txt'
     max_duration = 10.0
