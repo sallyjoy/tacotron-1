@@ -13,7 +13,7 @@ class Hyperparams:
     vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
 
     # data
-    data = "/data/private/voice/LJSpeech-1.0"
+    data = "/kaggle/input/datadd1/data/data/private/voice/LJSpeech-1.0"
     # data = "/data/private/voice/nick"
     test_data = 'harvard_sentences.txt'
     max_duration = 10.0
@@ -44,7 +44,7 @@ class Hyperparams:
     lr = 0.001 # Initial learning rate.
     logdir = "logdir/01"
     sampledir = 'samples'
-    batch_size = 32
+    batch_size =  16
 
 
 
