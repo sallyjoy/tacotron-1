@@ -59,7 +59,7 @@ class Graph:
 
         # monitor
         self.audio = tf.py_func(spectrogram2wav, [self.z_hat[0]], tf.float32)
-
+        k=0
         if mode in ("train", "eval"):
             # Loss
             self.loss1 = tf.reduce_mean(tf.abs(self.y_hat - self.y))
@@ -103,9 +103,9 @@ if __name__ == '__main__':
                 _, gs = sess.run([g.train_op, g.global_step])
 
                 # Write checkpoint files
-                if gs % 1000 == 0:
+                if (gs % 1000 == 0) and (k<=2):
                     sv.saver.save(sess, hp.logdir + '/model_gs_{}k'.format(gs//1000))
-
+                    k++
                     # plot the first alignment for logging
                     al = sess.run(g.alignments)
                     plot_alignment(al[0], gs)
