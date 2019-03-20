@@ -98,14 +98,14 @@ if __name__ == '__main__':
     # with g.graph.as_default():
     sv = tf.train.Supervisor(logdir=hp.logdir, save_summaries_secs=60, save_model_secs=0)
     with sv.managed_session() as sess:
-        while 1:
+        while (1) and (k<=2):
             for _ in tqdm(range(g.num_batch), total=g.num_batch, ncols=70, leave=False, unit='b'):
                 _, gs = sess.run([g.train_op, g.global_step])
 
                 # Write checkpoint files
                 if (gs % 1000 == 0) and (k<=2):
                     sv.saver.save(sess, hp.logdir + '/model_gs_{}k'.format(gs//1000))
-                    k++
+                    k=k+1
                     # plot the first alignment for logging
                     al = sess.run(g.alignments)
                     plot_alignment(al[0], gs)
