@@ -47,7 +47,7 @@ class Hyperparams:
     lr = 0.001 # Initial learning rate.
     logdir = "/kaggle/working/logdir/01"
     sampledir = 'samples'
-    batch_size = "32"
+    batch_size = 32
 
 
 
