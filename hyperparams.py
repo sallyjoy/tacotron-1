@@ -15,7 +15,7 @@ class Hyperparams:
     # data
     #data = "/kaggle/input/datadd1/data/data/private/voice/LJSpeech-1.0"
     
-    data = "/kaggle/input/data/data/data/private/voice/LJSpeech-1.0"
+    data = "/kaggle/input/data/data/private/voice/LJSpeech-1.0"
 
     # data = "/data/private/voice/nick"
     test_data = 'harvard_sentences.txt'
