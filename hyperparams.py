@@ -8,12 +8,15 @@ class Hyperparams:
     '''Hyper parameters'''
     
     # pipeline
-    prepro = False  # if True, run `python prepro.py` first before running `python train.py`.
+    prepro = True  # if True, run `python prepro.py` first before running `python train.py`.
 
     vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
 
     # data
-    data = "/kaggle/input/cleancmu301/data/private/voice/LJSpeech-1.0"
+    #data = "/kaggle/input/datadd1/data/data/private/voice/LJSpeech-1.0"
+    
+    data = "/kaggle/input/data/data/private/voice/LJSpeech-1.0"
+
     # data = "/data/private/voice/nick"
     test_data = 'harvard_sentences.txt'
     max_duration = 10.0
@@ -42,9 +45,9 @@ class Hyperparams:
 
     # training scheme
     lr = 0.001 # Initial learning rate.
-    logdir = "logdir/01"
+    logdir = "/kaggle/working/logdir/01"
     sampledir = 'samples'
-    batch_size =  16
+    batch_size = "32"
 
 
 
