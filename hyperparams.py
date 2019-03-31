@@ -10,7 +10,7 @@ class Hyperparams:
     # pipeline
     prepro = True  # if True, run `python prepro.py` first before running `python train.py`.
 
-    vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
+    vocab = "PE abcdefghijklmnopqrstuvwxyz'.?!" # P: Padding E: End of Sentence
 
     # data
     #data = "/kaggle/input/datadd1/data/data/private/voice/LJSpeech-1.0"
