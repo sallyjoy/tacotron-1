@@ -45,7 +45,8 @@ class Hyperparams:
     dropout_rate = .5
 
     # training scheme
-    lr = 0.001 # Initial learning rate.
+    #lr = 0.001 # Initial learning rate.
+    lr = 0.0005
     logdir = "/kaggle/working/logdir/01"
     sampledir = 'samples'
     batch_size = 32
