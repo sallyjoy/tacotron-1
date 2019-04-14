@@ -9,9 +9,16 @@ class Hyperparams:
     
     # pipeline
     prepro = True  # if True, run `python prepro.py` first before running `python train.py`.
-
-    vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
-
+    
+    
+    
+    #**************
+    #vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding E: End of Sentence
+    #**************
+    vocab = "PE abcdefghijklmnopqrstuvwxyz'.?!,"
+    
+    
+    
     # data
     #data = "/kaggle/input/datadd1/data/data/private/voice/LJSpeech-1.0"
     #data = "/kaggle/input/data/data/private/voice/LJSpeech-1.0"
@@ -49,9 +56,9 @@ class Hyperparams:
     
     
     #*************
-    #dropout_rate = .5
+    dropout_rate = .5
     #*************
-    dropout_rate = 0.05
+    
     
     #------------------------------------ training scheme --------------------------------
     
