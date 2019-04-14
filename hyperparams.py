@@ -41,12 +41,25 @@ class Hyperparams:
     encoder_num_banks = 16
     decoder_num_banks = 8
     num_highwaynet_blocks = 4
-    r = 5 # Reduction factor. Paper => 2, 3, 5
-    dropout_rate = .5
-
-    # training scheme
+    
+    #*******
+    #r = 5 # Reduction factor. Paper => 2, 3, 5
+    #*******
+    r=3
+    
+    
+    #*************
+    #dropout_rate = .5
+    #*************
+    dropout_rate = 0.05
+    
+    #------------------------------------ training scheme --------------------------------
+    
+    #****************
     #lr = 0.001 # Initial learning rate.
+    #****************
     lr = 0.0005
+    
     logdir = "/kaggle/working/logdir/01"
     sampledir = 'samples'
     batch_size = 32
